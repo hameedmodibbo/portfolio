@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
 
   <!-- Fonts -->
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -141,11 +142,33 @@ Buttons: Poppins (Semi-Bold) for consistency with headings.
      <p class="contact-detail">Feel free to reach out using the contact form below or catch up with me on social media.
        Let's create something amazing together!</p>
   <div class="contact-container">
-    <i class="fab fa-facebook-f"></i>
-    <i class="fab fa-instagram"></i>
-    <i class="fab fa-whatsapp"></i>
-    <i class="fab fa-linkedin-in"></i>
-  </div>
+
+
+    <div class="social">
+
+      <ul>
+        <li><i class="fab fa-facebook-f"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+        <li><i class="fab fa-whatsapp"></i></li>
+        <li><i class="fab fa-linkedin-in"></i></li>
+      </ul>
+      
+      
+      
+    </div>
+    <form class="contact-form" action="#" method="post">
+      <label for="name">
+        Name: <input type="text" placeholder="e.g John doe">
+      </label>
+      <label for="email">
+        Email: <input type="text" placeholder="e.g johndoe@example.com">
+      </label>
+      <label for="name">
+        Message: <textarea name="message" placeholder="Type message..."></textarea>
+      </label>
+    </form>
+
+  </div> <!--Container end-->
   
   
 </section>

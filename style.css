@@ -163,6 +163,15 @@ mark {
   font-style: italic;
 }
 
+@media(max-width: 768px) {
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text{
+    margin-bottom: 15px;
+  }
+}
 #about {
   /* min-height: 60vh; */
   background: var(--light-blue);
@@ -172,7 +181,7 @@ mark {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 .about-text{
   width: 50%;
@@ -318,6 +327,62 @@ span.damn {
 .contact-header{
 color: var(--blue);
 }
+textarea{
+  resize: none;
+}
+form{
+  padding: 15px;
+  width: 300px;
+  height: auto;
+}
+.social{
+  
+}
+.social ul{
+  list-style: none;
+  display: flex;
+}
+.social ul li{
+  margin: 10px;
+}
+.social ul li i{
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  font-size: 20px;
+  background-color: var(--blue);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+.contact-detail{
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 15px;
+}
+
+.contact-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media(max-width: 768px) {
+  .contact-container{
+    flex-direction: column-reverse;
+  }
+}
+
+
+
+
+
+
+
 /***********Footer section***********/
 footer {
   width: 100%;
