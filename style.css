@@ -16,6 +16,23 @@ html {
   
 
 }
+body{
+    font-family: poppins, serif;
+    font-weight: 400;
+    font-style: normal;
+  
+  
+}
+h1,h2,h3,h4,h5,h6{
+  fonr-family: poppins;
+}
+p{
+  font-family: nunito;
+}
+button{
+  font-family: poppins;
+  font-weight: 300;
+}
 
 .whatss{
   overflow-x: hidden;
@@ -94,7 +111,7 @@ header ul li a {
 
 /*********Hero section**********/
 .hero {
-  background-image: linear-gradient(45deg, var(--blue), var(--yellow));
+  background-image: linear-gradient(url(hero-bg.) var(--blue), var(--yellow));
   height: 60vh;
   display: flex;
   align-items: center;
@@ -108,7 +125,7 @@ header ul li a {
 }
 
 .hero p {
-  font-family: monospace;
+  font-family: lato;
 }
 
 .cta {
@@ -148,7 +165,7 @@ mark {
   text-decoration: none;
   padding: 7px 15px;
   background: var(--yellow);
-  color: var(--white);
+  color: var(--blue);
   margin: 15px 0;
   display: inline-block;
 }
@@ -243,39 +260,7 @@ span.damn {
 
 
 /**************Contact**************/
-.contact-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
 
-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-}
-
-form input,
-textarea {
-  width: 100%;
-  margin: 4px auto;
-  padding: 5px;
-  outline: 2px solid var(--yellow);
-  border: none;
-}
-
-form input::focus {}
-
-form .submit {
-  padding: 7px 15px;
-  background: var(--blue);
-  color: var(--white);
-  border: none;
-  display: block;
-  margin: 0 2rem;
-}
 
 #contact p,
 #contact h2 {
