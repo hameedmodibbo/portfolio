@@ -111,7 +111,10 @@ header ul li a {
 
 /*********Hero section**********/
 .hero {
-  background-image: linear-gradient(url(hero-bg.) var(--blue), var(--yellow));
+  background-image: url(hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   height: 60vh;
   display: flex;
   align-items: center;
@@ -124,8 +127,9 @@ header ul li a {
   font-size: 2.5rem;
 }
 
-.hero p {
+.hero .job {
   font-family: lato;
+  color: var(--blue);
 }
 
 .cta {
@@ -145,11 +149,17 @@ mark {
 }
 
 #about {
-  min-height: 60vh;
+  /* min-height: 60vh; */
   background: var(--light-blue);
   text-align: justify;
   line-height: 1.5;
   padding: 2rem 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-text{
+  width: 60%;
 }
 
 #about h2 {
@@ -266,7 +276,9 @@ span.damn {
 #contact h2 {
   text-align: center;
 }
-
+.contact-header{
+color: var(--blue);
+}
 /***********Footer section***********/
 footer {
   width: 100%;
