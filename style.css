@@ -172,6 +172,13 @@ mark {
     margin-bottom: 15px;
   }
 }
+@media(max-width:500px) {
+  #about .img img{
+    width: 350px;
+    height: 400px;
+  }
+  
+}
 #about {
   /* min-height: 60vh; */
   background: var(--light-blue);
