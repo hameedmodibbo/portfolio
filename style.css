@@ -401,3 +401,49 @@ footer p {
 footer a{
   color: var(--light-blue);
 }
+.project{
+  width: 300px;
+  box-shadow: 3px 3px 5px #ccc, -3px -3px 5px #4840a3;
+  position: relative;
+}
+.project img{
+  width: 100%;
+}
+.projects-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.project-detail{
+  text-align: center;
+  padding: 5px;
+ position: absolute;
+ bottom: 0;
+ background-color: rgba(0,0,0,0.7); 
+ transform: translateY(150%);
+ opacity: 0;
+transition: 0.3s ease-in-out;
+}
+.project:hover .project-detail{
+  opacity: 1;
+  transform: translateY(0);
+}
+.project-detail h4{
+  color: var(--blue);
+  color: var(--yellow);
+  font-weight: normal;
+  font-size: 1.2em;
+  margin: 10px;
+}
+.project-detail h4 a{
+  text-decoration: none;
+  color: var(--white);
+  padding: 5px 10px;
+  background-color: #4840a3;
+}
+.project-detail p{
+  font-size: 1.1em;
+  color: var(--white);
+}
