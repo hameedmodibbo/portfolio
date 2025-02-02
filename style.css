@@ -468,3 +468,20 @@ width: 100%;
 .project-overlay{
   position: absolute;
 }
+
+.cookie-message{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  /* padding: 10px; */
+  background-color: #333333;
+  color: #fff;
+  z-index: 2211;
+  position: absolute;
+  bottom: 0;
+}
+.btn-close-cookie{
+  background-color: #4840a3;
+  color: #fff;
+}
