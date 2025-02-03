@@ -1,11 +1,10 @@
 html {
-  --yellow: #f9cd6a;
-  --blue: #4840a3;
-  --light-blue: #9cbbfc;
-  --white: #ffffff;
+  --yellow: #F6D55C; /* Bright yellow */
+  --blue: #1D3557;   /* Dark blue */
+  --light-blue: #A8D8B9; /* Mint green */
+  --white: #F1F1F1;  /* Light gray */
+  --orange: #ED553B; /* Vibrant orange */
   scroll-behavior: smooth;
-
-
 }
 
 * {
@@ -152,7 +151,7 @@ header ul li a {
   margin: 0.75rem;
   display: inline-block;
   background-color: var(--yellow);
-  color: black;
+  color: var(--white);
 }
 
 /*******About me Section*****†********/
@@ -163,22 +162,6 @@ mark {
   font-style: italic;
 }
 
-@media(max-width: 768px) {
-  #about {
-    flex-direction: column;
-    text-align: center;
-  }
-  .about-text{
-    margin-bottom: 15px;
-  }
-}
-@media(max-width:500px) {
-  #about .img img{
-    width: 350px;
-    height: 400px;
-  }
-  
-}
 #about {
   /* min-height: 60vh; */
   background: var(--light-blue);
@@ -191,14 +174,7 @@ mark {
   /* flex-wrap: wrap; */
 }
 .about-text{
-  width: 50%;
-}
-#about .img{
-  min-width: 450px;
-}
-#about .img img{
-  width: 400px;
-  height: 460px;
+  /* width: 50%; */
 }
 
 #about h2 {
@@ -382,7 +358,16 @@ form input, form textarea {
   }
 }
 
-
+.btn__submit{
+  border: none;
+  font-size: 1em;
+  width: 100%;
+  text-decoration: none;
+  padding: 7px 15px;
+  display: inline-block;
+  background-color: var(--blue);
+  color: var(--white);
+}
 
 
 
