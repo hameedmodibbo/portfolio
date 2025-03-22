@@ -90,7 +90,7 @@ header ul li a {
     left: 0;
     width: 100%;
     background: var(--blue);
-    z-index: 1;
+    z-index: 9999;
     transform: translateY(-120%)
   } }
   header ul li {
