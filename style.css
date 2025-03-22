@@ -111,16 +111,29 @@ header ul li a {
 
 /*********Hero section**********/
 .hero {
-  background-image: url(hero-bg.jpg);
+    background-image: url(hero-bg.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+
   height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
+}
+.sticky{
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+.slider{
+/* display: flex; */
+}
+.slide{
+  width: 100%;
+  height: 100%;
 }
 .overlay{
   position: absolute;
