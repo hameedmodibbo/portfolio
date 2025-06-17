@@ -1,42 +1,35 @@
-const toggle = document.querySelector(".toggle");
-const mobileNav = document.querySelector(".mobile-nav");
-const about = document.querySelector('#about');
-const hero = document.querySelector('.hero');
+// Initialize AOS animation library
+AOS.init({
+  duration: 800,
+  easing: 'ease-in-out',
+  once: true
+});
 
-const nav = document.querySelector('.main-header');
-const logo = document.querySelector('.logo');
-const navLinks = document.querySelector('.mobile-nav');
+// Mobile menu toggle
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
 
-toggle.addEventListener('click', ()=>{
-  mobileNav.classList.toggle("open");
-})
-// const message = document.createElement('div');
-// message.innerHTML = 'We use this cookie to provide better functionality and analytics<button class="cta btn-close-cookie">Got it!</button>';
-// console.log(hero);
-// message.classList.add('cookie-message')
-// about.append(message)
+mobileMenuBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+    ? '<i class="fas fa-times"></i>' 
+    : '<i class="fas fa-bars"></i>';
+});
 
-// const closeCookie = document.querySelector('.btn-close-cookie');
-// closeCookie.addEventListener('click',()=>{
-//   about.removeChild(message)
-// });
+// Close mobile menu when clicking a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+  });
+});
 
-// navLinks.addEventListener('click', function(e){
-// if (e.target.classList.contains('nav-link')) {
-  
-// }
-// });
-
-const stickyNav = function(entries, observer){
-  const [entry] = entries;
-  
-  if(!entry.isIntersecting) nav.classList.add("sticky");
-  else nav.classList.remove('sticky');
-
-  stickyobserver.unobserve(hero)
-}
-const stickyobserver = new IntersectionObserver(stickyNav, {
-  root: null,
-  threshold: 0
-}) 
-stickyobserver.observe(hero);
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
